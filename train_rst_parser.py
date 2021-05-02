@@ -169,7 +169,7 @@ def main():
     tag_table = construct_embedding_table(tag_alpha, config.tag_dim, config.freeze)
     etype_table = construct_embedding_table(etype_alpha, config.etype_dim, config.freeze)
     
-    logger.info("Finish reading train data by:", round(time.time() - start_a, 2), 'sec')
+    logger.info("Finish reading train data by:" + str(round(time.time() - start_a, 2)) + 'sec')
 
     # DEV data processing
     reader = Reader(config.dev_path, config.dev_syn_feat_path)
