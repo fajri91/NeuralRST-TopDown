@@ -88,8 +88,8 @@ F (rst): Recall: R=2811/4616=0.609, Precision: P=2811/4616=0.609, Fmeasure: 0.60
 -----------------------------------------------------------------------------------
 S (ori): Recall: R=1690/2308=0.7322, Precision: P=1690/2308=0.7322, Fmeasure: 0.7322
 N (ori): Recall: R=1440/2308=0.6239, Precision: P=1440/2308=0.6239, Fmeasure: 0.6239
-RUN - R (ori): Recall: R=1167/2308=0.5056, Precision: P=1167/2308=0.5056, Fmeasure: 0.5056
-RUN - F (ori): Recall: R=1148/2308=0.4974, Precision: P=1148/2308=0.4974, Fmeasure: 0.4974
+R (ori): Recall: R=1167/2308=0.5056, Precision: P=1167/2308=0.5056, Fmeasure: 0.5056
+F (ori): Recall: R=1148/2308=0.4974, Precision: P=1148/2308=0.4974, Fmeasure: 0.4974
 ```
 
 Output for dynamic training, (rst = RST Parseval, ori = original Parseval):
