@@ -30,10 +30,13 @@ def main():
     vocab = Vocab(word_alpha, tag_alpha, etype_alpha, gold_action_alpha, action_label_alpha, relation_alpha, nuclear_alpha, nuclear_relation_alpha)
     
     network = MainArchitecture(vocab, config) 
-    network.load_state_dict(torch.load(config.model_name))
 
     if config.use_gpu:
+        network.load_state_dict(torch.load(config.model_name))
         network = network.cuda()
+    else:
+        network.load_state_dict(torch.load(config.model_name, map_location=torch.device('cpu')))
+
     network.eval()
     
     logger.info('Reading dev instance, and predict...')
